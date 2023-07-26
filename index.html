@@ -40,7 +40,7 @@
   <header class="container mx-auto">
     <!-- navbar start -->
     <nav class="navbar justify-between my-5 lg:bg-color-primary lg:rounded-full items-center lg:text-white">
-      <div class="flex-1 justify-start">
+      <div class="flex-1 justify-end lg:justify-start order-last lg:order-none ml-auto">
         <div class="dropdown">
           <label tabindex="0" class="btn btn-ghost lg:hidden">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -56,7 +56,7 @@
             <li><a class="text-lg font-medium">All Fruits</a></li>
           </ul>
         </div>
-        <div class="navbar-center hidden lg:flex">
+        <div class="navbar-center hidden lg:flex ml-auto">
           <ul class="menu menu-horizontal px-1 ">
             <li><a class="text-lg font-medium">Home</a></li>
             </li>
@@ -66,7 +66,7 @@
           </ul>
         </div>
       </div>
-      <div class="flex-1 justify-center">
+      <div class="flex-1 justify-center order-first lg:order-none">
         <a class="flex normal-case items-center text-2xl lg:text-4xl gap-2  font-medium">
           <img class="lg:w-10" src="./images/logo.png" alt="">
           Fruit Burst
@@ -197,7 +197,7 @@
   </header>
   <!-- main section start -->
   <main class="container mx-auto">
-    <!-- fruit card section -->
+    <!-- deal of the day section -->
     <section class="my-24 px-3">
       <!-- countdown section -->
       <div class="flex flex-col lg:flex-row gap-5 justify-between items-center">
@@ -260,7 +260,7 @@
           </div>
         </div>
       </div>
-      <!-- card section -->
+      <!-- fruit card section -->
       <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-between gap-3">
         <!-- card 1 -->
         <div class="card bg-base-100 border border-gray-300">
@@ -521,6 +521,24 @@
       </div>
       <div class="flex justify-center mt-8">
         <button class="btn bg-color-primary text-white capitalize">Shop All</button>
+      </div>
+    </section>
+    <!-- team section -->
+    <section>
+      <div class="hero " style="background-image: url('./images/team.png');">
+        <div class="hero-overlay bg-opacity-60"></div>
+        <div class="hero-content text-center text-neutral-content">
+          <div class="">
+            <div>
+              <h1 class="mb-5 text-5xl font-extrabold">Meet the team section</h1>
+              <p class="mb-5 font-medium max-w-xl">Contrary to popular belief, is not simply random text. It has roots
+                in
+                a piece of classical
+                Latin literature from 45 BC,
+                making it over 2000 years old.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </main>
