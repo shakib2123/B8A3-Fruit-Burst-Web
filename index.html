@@ -41,7 +41,7 @@
     <!-- navbar start -->
     <nav class="navbar justify-between my-5 lg:bg-color-primary lg:rounded-full items-center lg:text-white">
       <div class="flex-1 justify-end lg:justify-start order-last lg:order-none ml-auto">
-        <div class="dropdown">
+        <div class="dropdown dropdown-end">
           <label tabindex="0" class="btn btn-ghost lg:hidden">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
               stroke="currentColor">
@@ -56,7 +56,7 @@
             <li><a class="text-lg font-medium">All Fruits</a></li>
           </ul>
         </div>
-        <div class="navbar-center hidden lg:flex ml-auto">
+        <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1 ">
             <li><a class="text-lg font-medium">Home</a></li>
             </li>
@@ -66,7 +66,7 @@
           </ul>
         </div>
       </div>
-      <div class="flex-1 justify-center order-first lg:order-none">
+      <div class="flex-1 justify-start lg:justify-center order-first lg:order-none">
         <a class="flex normal-case items-center text-2xl lg:text-4xl gap-2  font-medium">
           <img class="lg:w-10" src="./images/logo.png" alt="">
           Fruit Burst
@@ -85,7 +85,7 @@
       <div class="carousel w-full">
         <!-- slide1 -->
         <div id="slide1" class="carousel-item relative w-full">
-          <div class="hero h-96 lg:h-screen bg-cover bg-no-repeat" style="background-image: url(./images/banner1.png);">
+          <div class="hero h-[90vh] bg-cover bg-no-repeat" style="background-image: url(./images/banner1.png);">
             <div class="hero-overlay bg-opacity-60"></div>
             <div class="hero-content text-center text-neutral-content">
               <div class="max-w-3xl">
@@ -106,7 +106,7 @@
         </div>
         <!-- slide2 -->
         <div id="slide2" class="carousel-item relative w-full">
-          <div class="hero h-96 lg:h-screen bg-cover bg-no-repeat" style="background-image: url(./images/banner2.png);">
+          <div class="hero h-[90vh] bg-cover bg-no-repeat" style="background-image: url(./images/banner2.png);">
             <div class="hero-overlay bg-opacity-60"></div>
             <div class="hero-content text-center text-neutral-content">
               <div class="max-w-3xl">
@@ -120,14 +120,14 @@
               </div>
             </div>
           </div>
-          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-2/4">
             <a href="#slide1" class="btn btn-circle">❮</a>
             <a href="#slide3" class="btn btn-circle">❯</a>
           </div>
         </div>
         <!-- slide3 -->
         <div id="slide3" class="carousel-item relative w-full">
-          <div class="hero h-96 lg:h-screen bg-cover bg-no-repeat" style="background-image: url(./images/banner3.png);">
+          <div class="hero h-[90vh] bg-cover bg-no-repeat" style="background-image: url(./images/banner3.png);">
             <div class="hero-overlay bg-opacity-60"></div>
             <div class="hero-content text-center text-neutral-content">
               <div class="max-w-3xl">
@@ -141,14 +141,14 @@
               </div>
             </div>
           </div>
-          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-2/4">
             <a href="#slide2" class="btn btn-circle">❮</a>
             <a href="#slide4" class="btn btn-circle">❯</a>
           </div>
         </div>
         <!-- slide4 -->
         <div id="slide4" class="carousel-item relative w-full">
-          <div class="hero h-96 lg:h-screen bg-cover bg-no-repeat" style="background-image: url(./images/banner4.png);">
+          <div class="hero h[90vh] bg-cover bg-no-repeat" style="background-image: url(./images/banner4.png);">
             <div class="hero-overlay bg-opacity-60"></div>
             <div class="hero-content text-center text-neutral-content">
               <div class="max-w-3xl">
@@ -162,7 +162,7 @@
               </div>
             </div>
           </div>
-          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-2/4">
             <a href="#slide3" class="btn btn-circle">❮</a>
             <a href="#slide1" class="btn btn-circle">❯</a>
           </div>
@@ -170,7 +170,7 @@
       </div>
     </section>
     <!-- items-section -->
-    <section class="max-w-5xl mx-auto p-9 bg-white rounded-xl shadow-lg relative -mt-28 hidden lg:visible lg:block">
+    <section class="max-w-5xl mx-auto p-9 bg-white rounded-xl shadow-lg relative -mt-24 hidden lg:visible lg:block">
       <div class="grid grid-cols-5 gap-8">
         <div class="text-center">
           <img src="./images/fruit1.png" alt="">
@@ -524,18 +524,90 @@
       </div>
     </section>
     <!-- team section -->
-    <section>
-      <div class="hero " style="background-image: url('./images/team.png');">
-        <div class="hero-overlay bg-opacity-60"></div>
-        <div class="hero-content text-center text-neutral-content">
-          <div class="">
+    <section class="my-24 px-3">
+      <div class="hero h-auto rounded-lg bg-cover bg-no-repeat" style="background-image: url('./images/team.png');">
+        <div class="hero-overlay bg-opacity-60 rounded-lg"></div>
+        <div class="text-center text-neutral-content">
+          <div class="p-12">
             <div>
-              <h1 class="mb-5 text-5xl font-extrabold">Meet the team section</h1>
-              <p class="mb-5 font-medium max-w-xl">Contrary to popular belief, is not simply random text. It has roots
+              <h1 class="mb-5 text-3xl lg:text-5xl font-extrabold">Meet the team section</h1>
+              <p class="mb-5 font-medium max-w-xl mx-auto">Contrary to popular belief, is not simply random text. It has
+                roots
                 in
                 a piece of classical
                 Latin literature from 45 BC,
                 making it over 2000 years old.</p>
+            </div>
+            <!-- team cards -->
+            <div class="grid gap-0 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+              <!-- card-1 -->
+              <div class="card bg-transparent">
+                <figure class="px-10 pt-10">
+                  <img src="./images/member1.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="text-2xl mx-auto font-bold">Awlad Hossain</h2>
+                  <p class="font-medium">Fruits Expert</p>
+                  <div class="card-actions">
+                    <a class="bg-color-primary rounded-full px-3 py-1" href=""><i
+                        class="fa-brands fa-facebook-f"></i></a>
+                    <a class="bg-color-primary rounded-full px-2 py-1" href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a class="bg-color-primary rounded-full px-2 py-1" href=""><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+                  </div>
+                </div>
+              </div>
+              <!-- card-2 -->
+              <div class="card bg-transparent">
+                <figure class="px-10 pt-10">
+                  <img src="./images/member2.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="text-2xl mx-auto font-bold">Safia Chowdhury</h2>
+                  <p class="font-medium">Fruits Expert</p>
+                  <div class="card-actions">
+                    <a class="bg-color-primary rounded-full px-3 py-1" href=""><i
+                        class="fa-brands fa-facebook-f"></i></a>
+                    <a class="bg-color-primary rounded-full px-2 py-1" href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a class="bg-color-primary rounded-full px-2 py-1" href=""><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+                  </div>
+                </div>
+              </div>
+              <!-- card-3 -->
+              <div class="card bg-transparent">
+                <figure class="px-10 pt-10">
+                  <img src="./images/member3.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="text-2xl mx-auto font-bold">Rokib Hossain</h2>
+                  <p class="font-medium">Fruits Expert</p>
+                  <div class="card-actions">
+                    <a class="bg-color-primary rounded-full px-3 py-1" href=""><i
+                        class="fa-brands fa-facebook-f"></i></a>
+                    <a class="bg-color-primary rounded-full px-2 py-1" href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a class="bg-color-primary rounded-full px-2 py-1" href=""><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+                  </div>
+                </div>
+              </div>
+              <!-- card-1 -->
+              <div class="card bg-transparent">
+                <figure class="px-10 pt-10">
+                  <img src="./images/member4.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="text-2xl mx-auto font-bold">Chaity</h2>
+                  <p class="font-medium">Fruits Expert</p>
+                  <div class="card-actions">
+                    <a class="bg-color-primary rounded-full px-3 py-1" href=""><i
+                        class="fa-brands fa-facebook-f"></i></a>
+                    <a class="bg-color-primary rounded-full px-2 py-1" href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a class="bg-color-primary rounded-full px-2 py-1" href=""><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
